@@ -69,7 +69,7 @@ Con esto ya tendriamos creado el rol que vamos a usar.
 En este punto crearemos el almacenamiento donde se guardaran los json con los datos de los usuarios.
 Buscaremos S3 y seguidamente pulsaremos en **Create a bucket**.
 En al siguiente ventana le pondremos un nombre que tiene que ser unico, el resto de opciones las dejaremos como vienen por defecto.
-![Alt text](img\image-6.png)
+![Alt text](img/image-6.png)
 
 
 ## Creacion de una DynamoDB
@@ -79,7 +79,7 @@ Aqui crearemos una BBDD NoSQL, nos iremos al buscador y la buscaremos.
 Pulsaremos en **Create Table**. Le podremos el nombre que elijamos y la opcion *Partition key* pondremos ID, ya que sera el valor unico que tendra cada registro que iremos añadiendo.
 Lo pondremos de tipo *Number*.
 
-![Alt text](img\image-7.png)
+![Alt text](img/image-7.png)
 
 ## Creacion de Lambda
 ***
@@ -87,7 +87,7 @@ Lo pondremos de tipo *Number*.
 Con todos los serivicios anteriores creados, crearemos una funcion para que interactue con los mismos.
 Buscaremos lambda y le daremos a **Create function**.
 En *Function name* le pondremos el nombre que elijamos, en *Runetime* elejiremos Python 3.11 y en *Execution role* elejiremos el rol que hemos creado antes.
-![Alt text](img\image-8.png)
+![Alt text](img/image-8.png)
 
 Una vez creada con los parametros antes indicados, entramos en ella y nos situamos en la pestaña **Code**
 Aqui introduciremos los siguientes comandos de python.
@@ -165,7 +165,7 @@ Como no tienen mucho conocimiento en programación web, el cliente ha concedido 
 1.7.- Una vez la instancia esta en ejecución, tal y como se muestra en la imagen, puedes acceder a ella mediante SSH.
 
   
-![img.png](img\img.png)
+![img.png](img/img.png)
  
 ## Web DataBase
 **1.-Importar las bibliotecas:**
@@ -250,7 +250,7 @@ if __name__ == '__main__':
 
 3.4.- La web con el DataBase debería estar correctamente levantado.
 
-![img_2.png](img\web-tabla.png)
+![img_2.png](img/web-tabla.png)
 
 
 
@@ -297,13 +297,13 @@ Hemos utilizado el archivo `app_save_formulario.py`, proporcionado por el profes
     
 - Modificamos los permisos del rol de EC2 para permitir la escritura en S3 utilizando putObject.
 
-![prueba](img\role_ec2.png)
+![prueba](img/role_ec2.png)
 
 
 Con esos ajustes el formulario nos funcino perfectamente:
 
 
-![formulario](img\formulario.png) 
+![formulario](img/formulario.png) 
 
 
 
@@ -341,13 +341,13 @@ Luego, consideramos la opción de combinar el formulario y la tabla en una sola 
     > ```
 
 ### Pagina del formulario de la app
-![formulario](img\app_menu_formulario.png) 
+![formulario](img/app_menu_formulario.png) 
 
 
 
 
 ### Pagina de la tabla de la app
-![tabla](img\app_menu_tabla.png) 
+![tabla](img/app_menu_tabla.png) 
 
 
 Proporciono codigo completo:
