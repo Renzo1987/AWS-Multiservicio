@@ -56,8 +56,6 @@ Crearemos un rol nuevo.En la primera pestaña,en **Use case** seleccionamos el s
 
 Seguidamenet en la siguiente pestaña, pondremos nombre que elijamos en el campo **Role name**. Luego elejiremos los siguientes permisos.
 
-![Alt text](img/image-5.png)
-
 Y dariamos a **Create Role**.
 
 Con esto ya tendriamos creado el rol que vamos a usar.
